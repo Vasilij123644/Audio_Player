@@ -5,121 +5,91 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="165dp"
-        android:layout_height="167dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155"
-        app:srcCompat="@drawable/ic_launcher_background" />
-
     <Button
         android:id="@+id/pauseButton"
 
-        android:layout_width="124dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="532dp"
-        android:onClick="pause"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
 
-        android:text="Pause"
-        app:backgroundTint="@color/purple_200"
-        app:layout_constraintLeft_toRightOf="@id/playButton"
-        app:layout_constraintRight_toLeftOf="@id/stopButton"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:onClick="pause"
+        android:text="⏸"
+        android:textSize="25sp"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintEnd_toStartOf="@+id/stopButton"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:layout_constraintTop_toBottomOf="@+id/ispolname" />
 
     <Button
         android:id="@+id/playButton"
 
-        android:layout_width="123dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="532dp"
-        android:onClick="play"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
 
-        android:text="Play"
-        app:backgroundTint="@color/purple_200"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/pauseButton"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:onClick="play"
+        android:text="▶"
+        android:textSize="30sp"
+        app:backgroundTint="@color/teal_200"
+        app:iconTint="@color/cardview_shadow_end_color"
+        app:layout_constraintStart_toStartOf="@+id/ispolname"
+        app:layout_constraintTop_toBottomOf="@+id/ispolname" />
 
     <Button
         android:id="@+id/stopButton"
 
-        android:layout_width="127dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="532dp"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
         android:onClick="stop"
-        android:text="Stop"
-        app:backgroundTint="@color/purple_200"
-        app:layout_constraintLeft_toRightOf="@id/pauseButton"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="⏹"
+        android:textSize="30sp"
+        app:backgroundTint="@color/design_default_color_error"
+        app:layout_constraintEnd_toEndOf="@+id/ispolname"
+        app:layout_constraintTop_toBottomOf="@+id/ispolname" />
 
     <SeekBar
         android:id="@+id/volumeControl"
-        android:layout_width="389dp"
+        android:layout_width="363dp"
         android:layout_height="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.915" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Громкость"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.832" />
+        app:layout_constraintEnd_toEndOf="@+id/stopButton"
+        app:layout_constraintStart_toStartOf="@+id/playButton"
+        app:layout_constraintTop_toBottomOf="@+id/pauseButton" />
 
     <TextView
         android:id="@+id/ispolname"
-        android:layout_width="271dp"
+        android:layout_width="370dp"
         android:layout_height="54dp"
         android:gravity="center"
         android:text="TextView"
         android:textSize="24sp"
-        app:fontFamily="@font/smokum"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:fontFamily="sans-serif"
+        app:layout_constraintBottom_toTopOf="@+id/pauseButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintTop_toBottomOf="@+id/songname" />
 
     <TextView
         android:id="@+id/songname"
-        android:layout_width="245dp"
-        android:layout_height="62dp"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
         android:gravity="center"
-        android:text="TextView"
-        android:textSize="34sp"
 
-        app:fontFamily="@font/smokum"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintBottom_toTopOf="@+id/ispolname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="165dp"
-        android:layout_height="167dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/songname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.156"
         app:srcCompat="@drawable/ic_launcher_background" />
 
 

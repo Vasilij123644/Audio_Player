@@ -8,9 +8,9 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="162dp"
-        android:layout_height="33dp"
-        android:text="Список песен"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:text="Плейлист"
         android:textSize="24dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,7 +23,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list"
         android:layout_width="379dp"
-        android:layout_height="572dp"
+        android:layout_height="650dp"
 
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
 

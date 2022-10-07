@@ -53,12 +53,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
     }
     public void setInitialData(){
-
-        musics.add(new Music ("MUPP X wSadfriendd", "Vendetta", R.drawable.vendetta, R.raw.vendetta));
-        musics.add(new Music ("soviss", "Kitty Phonk", R.drawable.kittyphonk, R.raw.kitty_phonk));
-        musics.add(new Music ("SHADXWBXRN", "KNIGHT", R.drawable.knight, R.raw.knight));
-        musics.add(new Music ("Ghostface Playa, fkbambam", "KILLKA", R.drawable.killka, R.raw.killka));
-        musics.add(new Music ("KORDHELL", "Live Another Day", R.drawable.liveanotherday, R.raw.liveanotherday));
+        musics.add(new Music ("Miyagi", "Marmalade", R.drawable.marmalade, R.raw.marmalade));
+        musics.add(new Music ("Anna Asti", "По барам", R.drawable.bar, R.raw.bar));
+        musics.add(new Music ("Mikhail Shufutinskiy", "3-е сентября", R.drawable.sept, R.raw.sent));
+        musics.add(new Music ("Anna Asti", "Танец", R.drawable.tenec, R.raw.tanec));
+        musics.add(new Music ("Jony", "Никак", R.drawable.nikak, R.raw.nikak));
     }
 
 
